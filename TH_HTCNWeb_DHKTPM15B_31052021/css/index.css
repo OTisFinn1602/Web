@@ -1,0 +1,50 @@
+.container{
+    padding: 0;
+}
+.nav-pills>li{
+    padding: 0 20px;
+    color: rgb(8, 168, 168);
+}
+.bot{
+    padding-top: 70px;
+    display: inline-block;
+}
+.bot>span>a{
+    color: rgb(8, 168, 168);
+}
+.bot>span>a:hover{
+    text-decoration: none;
+    color: aqua;
+}
+.bot>span:hover{
+    cursor: pointer;
+    font-weight: 500;
+    color: aqua;
+}
+.search{
+    width: 500px;
+    height: 40px;
+}
+.row{
+    padding: 0;
+    margin: 0;
+}
+.c1{
+    width: 100%;
+    height: 50px;
+    background-color: #ffc107;
+}
+.b-c1{
+    width: 330px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    background-color: #fcc82a;
+}
+
+.khung{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    border: 1px solid #9999;
+}

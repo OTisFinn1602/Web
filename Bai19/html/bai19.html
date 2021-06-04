@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bai19.js"></script>
+    <title>Bài 19: Javascript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form action="#" method="dialog">
+                <div class="item">
+                    <label for="txtHoTen" class="control-label">Họ tên:</label>
+                    <input type="text" name="txtHoten" class="form-control" id="hoTen">
+                </div>
+
+                <div class="item">
+                    <label for="cboLop" class="control-label">Lớp:</label>
+                    <select name="lop" id="lstLop" class="custom-select">
+                        <option value="DHTKPM15A">DHTKPM15A</option>
+                        <option value="DHTKPM15B">DHTKPM15B</option>
+                        <option value="DHTKPM15C">DHTKPM15C</option>
+                    </select>
+                </div>
+
+                <div class="item">
+                    <label for="cboMonHoc" class="control-label">Môn học:</label>
+                    <select name="monHoc" id="lstMonHoc" class="custom-select" >
+                        <option value="Lập trình hướng đối tượng">Lập trình hướng đối tượng</option>
+                        <option value="Nhập môn lập trình">Nhập môn lập trình</option>
+                        <option value="Pháp luật đại cương">Pháp luật đại cương</option>
+                    </select>
+                </div>
+
+                <div class="item">
+                    <label for="radLoai" class="control-label">Loại:</label>
+                    <input type="radio" name="lyThuyet" id="lyThuyet" value="Lý thuyết">Lý thuyết
+                    <input type="radio" name="thucHanh" id="thucHanh" value="Thực hành">Thực hành
+                </div>
+
+                <input type="submit" id="dangKy" value="Đăng Ký">
+            </form>
+        </div>
+
+        <div class="row col-lg-12">
+            <table class="table table-secondary">
+                <tr>
+                    <th class="text-center">Họ tên</th>
+                    <th class="text-center">Lớp</th>
+                    <th class="text-center">Môn học đăng ký</th>
+                    <th class="text-center">Loại</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
