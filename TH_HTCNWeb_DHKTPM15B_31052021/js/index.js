@@ -33,16 +33,17 @@ $(document).ready(function(e){
     }
     $("#Pass").blur(KtraPass);
     
-    function KtraCheck(){
-        var KMSI = $("#Check").val();
-        if(KMSI == ''){
-            $("#tbCheck").html("abc");
-            return false;
+    var KMSI = $("input[type = 'checkbox']");
+    var count = 0;
+    var ischeck = false;
+    KMSI.change(function(){
+        var checkchange = $("input[type = 'checkbox']:checked");
+        count = 0;
+        ischeck = false;
+        if(count != 0){
+            ischeck = true;
         }
-        $("#tbCheck").html("aaa");
-        return true;
-    }
-    $("input[type = 'checkbox']:checked").blur(KtraCheck);
+    })
 
     $("#myBtn").click(function(){
         if(KtraEmail() == true && KtraPass() == true && KtraCheck() == true){
