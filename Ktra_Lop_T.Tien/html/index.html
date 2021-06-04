@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/Fonts-googleapis.css">
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+</head>
+<body>
+    <div class="container mt-2 mb-2">
+        <div class=" border border-dark">
+            <h3>TUOI TRE ONLINE</h3>
+            <h3>DANG KY MUA BAO ONLINE</h3>
+        </div>
+        <div class="border border-dark clearfix">
+            <div class="float-left col-lg-2 col-12 border border-dark">
+                <span>Left</span>
+            </div>
+            <div class="float-right col-lg-10 col-12 border border-dark">
+                <form action="#">
+                    <h5>Dang ky bao</h5>
+                    <div class="check-box" id="check">
+                        <input type="checkbox" value="Tuoi tre hang ngay" name="" id="hangngay" class="custom-checkbox"> Tuoi tre hang ngay
+                        <input type="checkbox" value="Tuoi tre cuoi" name="" id="cuoi" class="custom-checkbox"> Tuoi tre cuoi
+                        <input type="checkbox" value="Tuoi tre chu nhat" name="" id="chunhat" class="custom-checkbox"> Tuoi tre chu nhat
+                    </div>
+                    <!--  -->
+                    <span>Ky han</span>
+                    <select name="" id="kyhan" class="custom-select w-i">
+                        <option value="0">Chọn tháng</option>
+                        <option value="3">3 thang</option>
+                        <option value="6">6 thang</option>
+                        <option value="12">1 nam</option>
+                    </select>
+                    <!--  -->
+                    <span>Don gia</span> <br>
+                    <input readonly type="text" name="" id="dongia" class="form-control w-i"> <br>
+                    <!--  -->
+                    <span>Thong tin lien lac</span> <br>
+                    <input type="text" name="" id="lienlac" class="form-control w-i"> <br>
+                    <span class="text-danger" id="tblienlac">(*)</span> <br>
+                    <!--  -->
+                    <span>So dien thoai</span> <br>
+                    <input type="text" name="" id="sdt" class="form-control w-i"> <br>
+                    <span class="text-danger" id="tbsdt">(*)</span> <br>
+                    <!--  -->
+                    <span>Dia chi nhan bao</span> <br>
+                    <input type="text" name="" id="add" class="form-control w-i"> <br>
+                    <span class="text-danger" id="tbadd">(*)</span> <br>
+                    <!--  -->
+                    <span>Hinh thuc thanh toan</span> <br>
+                    <input type="radio" name="pay" class="custom-radio" id="chuyenkhoan" value="Chuyen khoan"> Chuyen khoan
+                    <input type="radio" name="pay" class="custom-radio" id="tienmat" value="Tien mat"> Tien mat <br>
+                    <!--  -->
+                    <button type="button" class="btn btn-primary m-3" id="btnDB">Dat bao</button>
+                    <!--  -->
+                    <div class="col-12">
+                        <table class="table table-secondary">
+                            <tr class="">
+                                <th class="text-center">STT</th>
+                                <th class="text-center">DAT BAO</th>
+                                <th class="text-center">KY HAN</th>
+                                <th class="text-center">THONG TIN LIEN LAC</th>
+                                <th class="text-center">DIA CHI NHAN BAO</th>
+                                <th class="text-center">TONG THANH TIEN</th>
+                                <th class="text-center">HINH THUC THANH TOAN</th>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
