@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnTapWeb</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="content">
+        <div class="container-fluid">
+            <header>
+                <div class="row">
+                    <div class="col-4 p-0 text-center" style="line-height: 220px;">
+                        <img class="w-50" src="../img/logo.png">
+                    </div>
+                    <div class="col-8 p-0">
+                        <img class="img-fluid" src="../img/header1.png" style="height: 220px !important;">
+                    </div>
+                </div>
+                <div class="row">
+                    <nav class="navbar navbar-collapse" style="background-color: rgb(170, 221, 170);">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="#" class="nav-link">Trang chu</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">To chuc</a></li>
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dang ky dat cho</a>
+                                <ul class="dropdown-menu pt-0 pb-0">
+                                    <li><a href="#" class="dropdown-item" data-toggle="modal" data-target="#myModal">Form dat cho</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="row mt-4">
+                <div class="col-9">
+                    <table class="table text-center" style="font-size: 10px;">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>HO TEN</th>
+                                <th>SDT</th>
+                                <th>NGAY NHAN TIEC</th>
+                                <th>GIO NHAN TIEC</th>
+                                <th>SO NGUOI</th>
+                                <th>LOAI TIEC</th>
+                                <th>LOAI PHONG</th>
+                                <th>THANH VIEN</th>
+                                <th>DICH VU DI KEM</th>
+                                <th>GHI CHU</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-3 p-3" style="background-color: rgb(170, 221, 170);">
+                    <h3 class="text-danger">DAT CHO</h3>
+                    <div class="form-group">
+                        <nav class="navbar navbar-collapse p-0">
+                            <ul class="nav">
+                                <li class="text-danger border border-dark w-100 bg-white nav-item">
+                                    <a href="" class="nav-link">Nhom gia dinh</a>
+                                </li>
+                                <li class="text-danger border border-dark w-100 bg-white nav-item">
+                                    <a href="" class="nav-link">Tiec sinh nhat</a>
+                                </li>
+                                <li class="text-danger border border-dark w-100 bg-white nav-item">
+                                    <a href="" class="nav-link">Nhom van phong</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <h3 class="text-danger">CONTACT</h3>
+                    <p class="text-primary" style="font-size: 13px;">Goi toi: <span class="mark text-dark">1900 6005</span> - De dat cho va duoc tu van.</p>
+                    <p class="text-primary" style="font-size: 14px;">Dia chi: 13 Tran Binh Trong - Quan 1 - TPHCM</p>
+                    <h3 class="text-danger">BAI VIET NOI BAT</h3>
+                    <ol type="1" style="font-size: 14px;">
+                        <li><a class="nav-link p-0" href="">Kinh nghiem to chuc sinh nhat cho be</a></li>
+                        <li><a class="nav-link p-0" href="">Dac san cac mien</a></li>
+                        <li><a class="nav-link p-0" href="">Van hoa am thuc Sai Gon</a></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <footer class="p-2" style="background-color: rgb(170, 221, 170);">
+            <span class="text-danger align-baseline">@Copyright Food Circles</span>
+        </footer>
+    </div>
+
+    <div class="modal fade" role="dialog" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>THONG TIN DAT TIEC</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">HO TEN NGUOI DAT TIEC:</label>
+                        <span class="text-danger" id="tbName">*</span> <br>
+                        <input class="form-control" type="text" placeholder="Ho Ten" id="txtName">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">DIEN THOAI LIEN HE</label>
+                        <span class="text-danger" id="tbPhone">*</span> <br>
+                        <input class="form-control" type="text" placeholder="Dien thoai" id="txtPhone">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">NGAY NHAN TIEC</label>
+                        <span class="text-danger" id="tbDate">*</span> <br>
+                        <input class="form-control" type="date" id="txtDate">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">GIO NHAN TIEC</label>
+                        <span class="text-danger" id="tbTime">*</span> <br>
+                        <input class="form-control" type="time" id="txtTime">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">SO NGUOI</label>
+                        <span class="text-danger" id="tbSN">*</span> <br>
+                        <input class="form-control" type="text" id="txtSN">
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">LOAI TIEC</label>
+                        <span class="text-danger" id="tbLT">*</span> <br>
+                        <select class="form-control" name="LT" id="LT">
+                            <option value="">Set Menu</option>
+                            <option value="">Buffet</option>
+                            <option value="">Finger Food</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">LOAI PHONG:</label>
+                        <span class="text-danger" id="tbLP">*</span>
+                        <input type="radio" name="LP" value="VIP" id="vip">VIP
+                        <input type="radio" name="LP" value="THUONG" id="thuong">THUONG
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">DICH VU DI KEM:</label>
+                        <input type="checkbox" name="DVDK" id="ckb-NV" value="Nhan vien phuc vu rieng">Nhan vien phuc vu rieng
+                        <input type="checkbox" name="DVDK" id="ckb-HT" value="Hoa tuoi">Hoa tuoi
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">THANH VIEN:</label>
+                        <input type="checkbox" name="TV" id="TV" value="Thanh Vien"> <span class="text-primary font-italic">Neu ban la thanh vien cua quan</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="font-weight-bold" style="font-size: 14px;">GHI CHU:</label> <br>
+                        <textarea cols="60" rows="5" placeholder="Khong gian thoang mat" id="txtGC"></textarea>
+                    </div>
+                    <button class="btn btn-success w-100" id="BtnSave">
+                        Luu
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <span class="text-danger text-right">Hot line: 1900 6005</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
